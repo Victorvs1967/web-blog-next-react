@@ -35,7 +35,12 @@ const SocialNetworks = ({ className }) => (
       <li 
         key={ item.id } 
         className={ styles.listItem }>
-        <a href={ item.href } target="_blank" className={ styles.listLink }>
+        <a 
+          href={ item.href } 
+          target="_blank" 
+          rel="noreferrer" 
+          className={ styles.listLink }
+        >
           { React.createElement(item.icon, {color: 'black', size: 50}) }
         </a>
       </li>) 
