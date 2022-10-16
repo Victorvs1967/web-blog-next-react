@@ -3,11 +3,13 @@ import cl from 'classnames';
 
 import styles from './index.module.scss';
 
-const Button = ({ className }) => (
-  <div    
-  className={ cl(className, styles.article) }
+const Button = ({ className, children, onClick, disabled }) => (
+  <div
+    className={ cl(className, styles.button) }
+    disabled={ disabled }
+    onClick={ onClick }
   >
-  Button
+  { children }
   </div>
 );
 

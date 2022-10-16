@@ -3,11 +3,11 @@ import cl from 'classnames';
 
 import styles from './index.module.scss';
 
-const PostGrid = ({ className }) => (
+const PostGrid = ({ className, children }) => (
   <div
-  className={ cl(className, styles.article) }
+  className={ cl(className, styles.postGrid) }
   >
-  PostGrid
+  { children }
   </div>
 );
 

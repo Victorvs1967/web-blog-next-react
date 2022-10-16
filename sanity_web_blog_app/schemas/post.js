@@ -28,7 +28,7 @@ export default {
       group: 'content',
     },
     {
-      name: 'pablisher_date',
+      name: 'pablished_date',
       title: 'Published Date',
       type: 'date',
       validation: Rule => Rule.required(),
